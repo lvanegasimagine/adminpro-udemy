@@ -12,7 +12,7 @@ const routes: Routes = [
       children: [
         {path: 'dashboard', component: DashboardComponent},
         {path: 'progress', component: ProgressComponent},
-        {path: 'graficas1', component: Graficas1Component},
+        {path: 'graficas', component: Graficas1Component},
         {path: '', pathMatch: 'full', redirectTo: '/dashboard'},
       ]
     },
