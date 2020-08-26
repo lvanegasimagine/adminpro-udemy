@@ -1,13 +1,17 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './login/register.component';
+
+// Modulo
 import { PagesModule } from './pages/pages.module';
+import { AppRoutingModule } from './app-routing.module';
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
 
 import { FormsModule } from '@angular/forms';
+
+// Servicio
+import { ServiceModule } from './services/service.module';
 
 @NgModule({
   declarations: [
@@ -19,9 +23,11 @@ import { FormsModule } from '@angular/forms';
     BrowserModule,
     PagesModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ServiceModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }
