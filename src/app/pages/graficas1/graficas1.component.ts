@@ -1,14 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { ChartType } from 'chart.js';
-import { MultiDataSet, Label } from 'ng2-charts';
 
 @Component({
   selector: 'app-graficas1',
   templateUrl: './graficas1.component.html',
-  styles: [
-  ]
+  styles: []
 })
 export class Graficas1Component implements OnInit {
+
 
   graficos: any = {
     'grafico1': {
@@ -36,9 +34,10 @@ export class Graficas1Component implements OnInit {
       'leyenda': '¿Le importa que le den gases?'
     },
   };
+
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
   }
 
 }
